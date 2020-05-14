@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USN Alumni</title>
+        <link title="stilark" href="stilark.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body class="body">
+    <div id="hele">
+        <nav class="navbar">
+
+          <li style="float:right"><a href="loggut.php"> Logg ut</a></li>
+          <form method="post" action="search.php" id="søkidatabasenskjema" name="søkidatabasenskjema" class="sokidatabasenskjema">
+          <li style="float:right;"> <button type="submit" id="search" name="search" class="search">Søk</button></li>
+          <li style="float:right; margin-top:0.1%;"><input type="text" id="sokidatabasen" name="sokidatabasen" class="bar" placeholder="Søk..."></input></li>
+            </form>
+
+          <div class="venstre">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown()">
+                  Meny 	&#8595;
+                </button>
+                <div class="dropdown-content" id="ourDropdown">
+                <li><a href="mail.php"> Send mail</a></li>
+                <li><a href="arrangementer.php"> Arrangementer</a></li>
+                <li ><a class="rapporter" href="rapporter.php">Rapporter brukere</a></li>
+              </div>
+            </div>
+            <li ><a class="hjem" href="defaultloggetinn.php"> Hjem </a></li>
+            <li ><a class="minside" href="registrerinfo.php"> Min Side</a></li>
+
+          </div>
+
+        </nav>
+        <script>
+        function dropdown(){
+          document.getElementById("ourDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var ourDropdown = document.getElementById("ourDropdown");
+            if (ourDropdown.classList.contains('show')) {
+              ourDropdown.classList.remove('show');
+
+            }
+          }
+        }
+        </script>
+
+
+<!-- Denne siden er utviklet av Jarle Stølsnes, siste gang endret 23.11.2018 -->
+<!-- Denne siden er kontrollert av Tom Noodt, siste gang 04.12.2018 -->

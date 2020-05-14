@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title>USN Alumni</title>
+        <link title="stilark" href="stilarkadmin.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta charset="UTF-8">
+        <script src="../hendelser.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body class="body">
+    <div id="hele">
+        <header>
+
+
+        </header>
+        <nav class="navbar">
+
+          <li style="float:right"><a href="../loggut.php"> Logg ut</a></li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown()">
+                  Meny &#8595;
+                </button>
+                <div class="dropdown-content" id="ourDropdown">
+                <li><a href="laginteresser.php"> Registerer nye interesser</a></li>
+                <li><a href="lagstudie.php"> Registerer nye studier</a></li>
+                <li><a href="slettinteresser.php"> Slett interesser</a></li>
+                <li><a href="administrerbrukere.php"> Administrer brukere</a></li>
+                <li><a href="regler.php"> Lag og oppdater regler </a></li>
+              </div>
+            </div>
+            <li class=><a href="admin.php"> Hjem </a></li>
+
+
+        </nav>
+        <script>
+        function dropdown(){
+          document.getElementById("ourDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var ourDropdown = document.getElementById("ourDropdown");
+            if (ourDropdown.classList.contains('show')) {
+              ourDropdown.classList.remove('show');
+
+            }
+          }
+        }
+        </script>
+
+          <!-- Denne siden er utviklet av Tom Noodt, siste gang endret 06.12.2018 -->
+          <!-- Denne siden er kontrollert av Jarle Stølsnes, siste gang 07.12.2018 -->
