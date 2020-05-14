@@ -1,5 +1,4 @@
-﻿<!-- Denne siden er utviklet av Tom Noodt, siste gang endret 01.03.2019 -->
-<!-- Denne siden er kontrollert av Erik-Andre Ørn, siste gang 03.03.2019 -->
+
 
   <?php
   include("sjekkomloggetinn.php");
